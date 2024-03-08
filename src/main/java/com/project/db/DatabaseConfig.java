@@ -13,9 +13,9 @@ public class DatabaseConfig {
 
 	private static final Logger LOG = LoggerFactory.getLogger(DatabaseConfig.class);
 
-	@Bean
-	public DataSource dataSource() {
-		LOG.info("HSQL Database initializing..");
-		return new EmbeddedDatabaseBuilder().addScript("testdb/schema.sql").addScript("testdb/data.sql").build();
-	}
+//	@Bean
+//	public DataSource dataSource() {
+//		LOG.info("HSQL Database initializing..");
+//		return new EmbeddedDatabaseBuilder().addScript("testdb/schema.sql").addScript("testdb/data.sql").build();
+//	}
 }

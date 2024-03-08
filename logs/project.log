@@ -232,3 +232,407 @@ Verify the connector's configuration, identify and stop any process that's liste
 2024-03-08 08:48:37.545  WARN 17588 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
 2024-03-08 08:48:38.519  INFO 17588 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4343 (http) with context path ''
 2024-03-08 08:48:38.530  INFO 17588 --- [main] c.p.NotificationServiceApplication       : Started NotificationServiceApplication in 18.595 seconds (JVM running for 20.093)
+2024-03-08 09:17:01.811  INFO 17588 --- [Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2024-03-08 09:17:01.873  INFO 17588 --- [Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-08 09:17:02.044  INFO 17588 --- [Thread-3] o.s.j.d.e.EmbeddedDatabaseFactory        : Shutting down embedded database: url='jdbc:hsqldb:mem:testdb'
+2024-03-08 09:17:36.698  INFO 24548 --- [main] c.p.NotificationServiceApplication       : Starting NotificationServiceApplication on MICHAELAJIRI89 with PID 24548 (started by michaelajiri in C:\Users\michaelajiri\Documents\Projects\Java Projects\notification-service)
+2024-03-08 09:17:36.706  INFO 24548 --- [main] c.p.NotificationServiceApplication       : No active profile set, falling back to default profiles: default
+2024-03-08 09:17:40.463  INFO 24548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-08 09:17:40.745  INFO 24548 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 256ms. Found 2 repository interfaces.
+2024-03-08 09:17:42.769  INFO 24548 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4d6ef751] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-08 09:17:45.120  INFO 24548 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4343 (http)
+2024-03-08 09:17:45.243  INFO 24548 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-08 09:17:45.244  INFO 24548 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2024-03-08 09:17:45.282  INFO 24548 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby27-x64\bin;C:\Python27;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\michaelajiri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\xampp\php;C:\composer;C:\Users\michaelajiri\apache-maven-3.8.6\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\doctl\;C:\Program Files\doctl\;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\michaelajiri\gradle-8.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\michaelajiri\AppData\Local\Microsoft\WindowsApps;C:\Users\michaelajiri\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin;;C:\Users\michaelajiri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\michaelajiri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\michaelajiri\AppData\Roaming\Composer\vendor\bin;C:\Users\michaelajiri\AppData\Local\Yarn\bin;C:\ngrok;;.]
+2024-03-08 09:17:45.996  INFO 24548 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-08 09:17:45.997  INFO 24548 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9108 ms
+2024-03-08 09:17:46.271  INFO 24548 --- [main] com.project.db.DatabaseConfig            : HSQL Database initializing..
+2024-03-08 09:17:46.317  WARN 24548 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/project/db/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+2024-03-08 09:17:46.331  INFO 24548 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-08 09:17:46.424 ERROR 24548 --- [main] org.apache.catalina.core.ContainerBase   : A child container failed during stop
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1010) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1448) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1437) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1004) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:474) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:822) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:382) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:250) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:306) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:320) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.project.NotificationServiceApplication.main(NotificationServiceApplication.java:10) ~[classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:441) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:267) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5367) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1448) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1437) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1004) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	... 24 common frames omitted
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.util.concurrent.ConcurrentMap java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @3aeaafa6
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[na:na]
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178) ~[na:na]
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172) ~[na:na]
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2225) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2213) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1586) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1516) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	... 33 common frames omitted
+
+2024-03-08 09:17:46.427 ERROR 24548 --- [main] org.apache.catalina.core.ContainerBase   : A child container failed during stop
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: A child container failed during stop
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1010) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:474) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:822) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:382) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:250) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:306) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:320) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.project.NotificationServiceApplication.main(NotificationServiceApplication.java:10) ~[classes/:na]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during stop
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1018) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1448) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1437) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1004) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	... 16 common frames omitted
+
+2024-03-08 09:17:46.464  INFO 24548 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-08 09:17:46.474 ERROR 24548 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/project/db/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.project.NotificationServiceApplication.main(NotificationServiceApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/project/db/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 28 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 42 common frames omitted
+Caused by: java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseConfigurerFactory.getConfigurer(EmbeddedDatabaseConfigurerFactory.java:57) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory.initDatabase(EmbeddedDatabaseFactory.java:180) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory.getDatabase(EmbeddedDatabaseFactory.java:157) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder.build(EmbeddedDatabaseBuilder.java:270) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.project.db.DatabaseConfig.dataSource(DatabaseConfig.java:19) ~[classes/:na]
+	at com.project.db.DatabaseConfig$$EnhancerBySpringCGLIB$$d0541381.CGLIB$dataSource$0(<generated>) ~[classes/:na]
+	at com.project.db.DatabaseConfig$$EnhancerBySpringCGLIB$$d0541381$$FastClassBySpringCGLIB$$f3077a34.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.project.db.DatabaseConfig$$EnhancerBySpringCGLIB$$d0541381.dataSource(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.hsqldb.jdbcDriver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.HsqlEmbeddedDatabaseConfigurer.getInstance(HsqlEmbeddedDatabaseConfigurer.java:50) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseConfigurerFactory.getConfigurer(EmbeddedDatabaseConfigurerFactory.java:47) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 57 common frames omitted
+
+2024-03-08 09:18:57.991  INFO 24152 --- [main] c.p.NotificationServiceApplication       : Starting NotificationServiceApplication on MICHAELAJIRI89 with PID 24152 (started by michaelajiri in C:\Users\michaelajiri\Documents\Projects\Java Projects\notification-service)
+2024-03-08 09:18:58.000  INFO 24152 --- [main] c.p.NotificationServiceApplication       : No active profile set, falling back to default profiles: default
+2024-03-08 09:19:03.366  INFO 24152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-08 09:19:03.867  INFO 24152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 364ms. Found 2 repository interfaces.
+2024-03-08 09:19:06.543  INFO 24152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$736d1120] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-08 09:19:10.608  INFO 24152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4343 (http)
+2024-03-08 09:19:10.693  INFO 24152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-08 09:19:10.700  INFO 24152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2024-03-08 09:19:10.727  INFO 24152 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby27-x64\bin;C:\Python27;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\michaelajiri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\xampp\php;C:\composer;C:\Users\michaelajiri\apache-maven-3.8.6\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\doctl\;C:\Program Files\doctl\;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\michaelajiri\gradle-8.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\michaelajiri\AppData\Local\Microsoft\WindowsApps;C:\Users\michaelajiri\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin;;C:\Users\michaelajiri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\michaelajiri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\michaelajiri\AppData\Roaming\Composer\vendor\bin;C:\Users\michaelajiri\AppData\Local\Yarn\bin;C:\ngrok;;.]
+2024-03-08 09:19:11.270  INFO 24152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-08 09:19:11.271  INFO 24152 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 12510 ms
+2024-03-08 09:19:11.498  INFO 24152 --- [main] com.project.db.DatabaseConfig            : HSQL Database initializing..
+2024-03-08 09:19:11.557  WARN 24152 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/project/db/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+2024-03-08 09:19:11.566  INFO 24152 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-03-08 09:19:11.634 ERROR 24152 --- [main] org.apache.catalina.core.ContainerBase   : A child container failed during stop
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1010) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1448) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1437) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1004) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:474) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:822) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:382) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:250) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:306) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:320) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.project.NotificationServiceApplication.main(NotificationServiceApplication.java:10) ~[classes/:na]
+Caused by: org.apache.catalina.LifecycleException: Failed to stop component [WebappLoader[StandardEngine[Tomcat].StandardHost[localhost].TomcatEmbeddedContext[]]]
+	at org.apache.catalina.util.LifecycleBase.handleSubClassException(LifecycleBase.java:441) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:267) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5367) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1448) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1437) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1004) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	... 24 common frames omitted
+Caused by: java.lang.reflect.InaccessibleObjectException: Unable to make field static final java.util.concurrent.ConcurrentMap java.io.ObjectStreamClass$Caches.localDescs accessible: module java.base does not "opens java.io" to unnamed module @3aeaafa6
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354) ~[na:na]
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297) ~[na:na]
+	at java.base/java.lang.reflect.Field.checkCanSetAccessible(Field.java:178) ~[na:na]
+	at java.base/java.lang.reflect.Field.setAccessible(Field.java:172) ~[na:na]
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearCache(WebappClassLoaderBase.java:2225) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferencesObjectStreamClassCaches(WebappClassLoaderBase.java:2213) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappClassLoaderBase.clearReferences(WebappClassLoaderBase.java:1586) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappClassLoaderBase.stop(WebappClassLoaderBase.java:1516) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:442) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	... 33 common frames omitted
+
+2024-03-08 09:19:11.636 ERROR 24152 --- [main] org.apache.catalina.core.ContainerBase   : A child container failed during stop
+
+java.util.concurrent.ExecutionException: org.apache.catalina.LifecycleException: A child container failed during stop
+	at java.base/java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.get(FutureTask.java:191) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1010) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardService.stopInternal(StandardService.java:474) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.StandardServer.stopInternal(StandardServer.java:822) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.startup.Tomcat.stop(Tomcat.java:382) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stopTomcat(TomcatWebServer.java:250) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.stop(TomcatWebServer.java:306) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.stopAndReleaseWebServer(ServletWebServerApplicationContext.java:320) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:145) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.project.NotificationServiceApplication.main(NotificationServiceApplication.java:10) ~[classes/:na]
+Caused by: org.apache.catalina.LifecycleException: A child container failed during stop
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1018) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:257) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1448) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1437) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) ~[na:na]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java) ~[na:na]
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:145) ~[na:na]
+	at org.apache.catalina.core.ContainerBase.stopInternal(ContainerBase.java:1004) ~[tomcat-embed-core-9.0.13.jar:9.0.13]
+	... 16 common frames omitted
+
+2024-03-08 09:19:11.661  INFO 24152 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2024-03-08 09:19:11.677 ERROR 24152 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration': Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/project/db/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:769) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:218) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1308) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1154) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:392) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1083) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:853) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:546) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248) ~[spring-boot-2.1.1.RELEASE.jar:2.1.1.RELEASE]
+	at com.project.NotificationServiceApplication.main(NotificationServiceApplication.java:10) ~[classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [com/project/db/DatabaseConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:627) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:456) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1288) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1127) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:538) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:498) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:273) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1237) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1164) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:857) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:760) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 28 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [javax.sql.DataSource]: Factory method 'dataSource' threw exception; nested exception is java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:622) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 42 common frames omitted
+Caused by: java.lang.IllegalStateException: Driver for test database type [HSQL] is not available
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseConfigurerFactory.getConfigurer(EmbeddedDatabaseConfigurerFactory.java:57) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory.initDatabase(EmbeddedDatabaseFactory.java:180) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseFactory.getDatabase(EmbeddedDatabaseFactory.java:157) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseBuilder.build(EmbeddedDatabaseBuilder.java:270) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.project.db.DatabaseConfig.dataSource(DatabaseConfig.java:19) ~[classes/:na]
+	at com.project.db.DatabaseConfig$$EnhancerBySpringCGLIB$$f6522d50.CGLIB$dataSource$0(<generated>) ~[classes/:na]
+	at com.project.db.DatabaseConfig$$EnhancerBySpringCGLIB$$f6522d50$$FastClassBySpringCGLIB$$143468.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:363) ~[spring-context-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at com.project.db.DatabaseConfig$$EnhancerBySpringCGLIB$$f6522d50.dataSource(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154) ~[spring-beans-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 43 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.hsqldb.jdbcDriver
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:520) ~[na:na]
+	at java.base/java.lang.Class.forName0(Native Method) ~[na:na]
+	at java.base/java.lang.Class.forName(Class.java:467) ~[na:na]
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:275) ~[spring-core-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.HsqlEmbeddedDatabaseConfigurer.getInstance(HsqlEmbeddedDatabaseConfigurer.java:50) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	at org.springframework.jdbc.datasource.embedded.EmbeddedDatabaseConfigurerFactory.getConfigurer(EmbeddedDatabaseConfigurerFactory.java:47) ~[spring-jdbc-5.1.3.RELEASE.jar:5.1.3.RELEASE]
+	... 57 common frames omitted
+
+2024-03-08 09:20:08.610  INFO 6332 --- [main] c.p.NotificationServiceApplication       : Starting NotificationServiceApplication on MICHAELAJIRI89 with PID 6332 (started by michaelajiri in C:\Users\michaelajiri\Documents\Projects\Java Projects\notification-service)
+2024-03-08 09:20:08.618  INFO 6332 --- [main] c.p.NotificationServiceApplication       : No active profile set, falling back to default profiles: default
+2024-03-08 09:20:11.910  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2024-03-08 09:20:12.089  INFO 6332 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 159ms. Found 2 repository interfaces.
+2024-03-08 09:20:15.233  INFO 6332 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$fc907670] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-08 09:20:17.374  INFO 6332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4343 (http)
+2024-03-08 09:20:17.498  INFO 6332 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-08 09:20:17.499  INFO 6332 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.13
+2024-03-08 09:20:17.537  INFO 6332 --- [main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Ruby27-x64\bin;C:\Python27;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Amazon\AWSCLIV2\;C:\Users\michaelajiri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\xampp\php;C:\composer;C:\Users\michaelajiri\apache-maven-3.8.6\bin;C:\Program Files\PuTTY\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\doctl\;C:\Program Files\doctl\;C:\Program Files (x86)\Groovy\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\Java\jdk-17\bin;C:\Program Files\Java\jdk-11.0.4\bin;C:\Program Files\Java\jdk1.8.0_192\bin;C:\Program Files\Java\jdk-15.0.2\bin;C:\Users\michaelajiri\gradle-8.2\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Program Files\MySQL\MySQL Server 5.7\bin;C:\Users\michaelajiri\AppData\Local\Microsoft\WindowsApps;C:\Users\michaelajiri\AppData\Local\GitHubDesktop\bin;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2023.2.2\bin;;C:\Users\michaelajiri\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\michaelajiri\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\michaelajiri\AppData\Roaming\Composer\vendor\bin;C:\Users\michaelajiri\AppData\Local\Yarn\bin;C:\ngrok;;.]
+2024-03-08 09:20:18.557  INFO 6332 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-08 09:20:18.558  INFO 6332 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 9705 ms
+2024-03-08 09:20:19.874  INFO 6332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-08 09:20:22.213  INFO 6332 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-08 09:20:22.649  INFO 6332 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2024-03-08 09:20:23.384  INFO 6332 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2024-03-08 09:20:23.390  INFO 6332 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2024-03-08 09:20:24.061  INFO 6332 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2024-03-08 09:20:24.844  INFO 6332 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2024-03-08 09:20:27.342  INFO 6332 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-08 09:20:29.784  INFO 6332 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-03-08 09:20:29.932  WARN 6332 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-08 09:20:30.950  INFO 6332 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4343 (http) with context path ''
+2024-03-08 09:20:30.960  INFO 6332 --- [main] c.p.NotificationServiceApplication       : Started NotificationServiceApplication in 23.946 seconds (JVM running for 26.107)
